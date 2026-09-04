@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="480" viewBox="0 0 940 480">
+<defs><pattern id="diagonal" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#0072B2"/><path d="M-2 2 L2 -2 M0 8 L8 0 M6 10 L10 6" stroke="#FFFFFF" stroke-width="2"/></pattern><pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#E69F00"/><circle cx="2" cy="2" r="1.5" fill="#111111"/></pattern></defs>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="470.0" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700">Walk-forward active return: train versus unseen test</text>
+<line x1="90" y1="284.46" x2="910" y2="284.46" stroke="#222222" stroke-width="1.5"/>
+<line x1="90" y1="390.00" x2="910" y2="390.00" stroke="#D9D9D9" stroke-width="1"/>
+<text x="80" y="395.00" text-anchor="end" font-family="Arial,sans-serif" font-size="13">-13.1</text>
+<line x1="90" y1="326.00" x2="910" y2="326.00" stroke="#D9D9D9" stroke-width="1"/>
+<text x="80" y="331.00" text-anchor="end" font-family="Arial,sans-serif" font-size="13">-5.2</text>
+<line x1="90" y1="262.00" x2="910" y2="262.00" stroke="#D9D9D9" stroke-width="1"/>
+<text x="80" y="267.00" text-anchor="end" font-family="Arial,sans-serif" font-size="13">2.8</text>
+<line x1="90" y1="198.00" x2="910" y2="198.00" stroke="#D9D9D9" stroke-width="1"/>
+<text x="80" y="203.00" text-anchor="end" font-family="Arial,sans-serif" font-size="13">10.7</text>
+<line x1="90" y1="134.00" x2="910" y2="134.00" stroke="#D9D9D9" stroke-width="1"/>
+<text x="80" y="139.00" text-anchor="end" font-family="Arial,sans-serif" font-size="13">18.7</text>
+<line x1="90" y1="70.00" x2="910" y2="70.00" stroke="#D9D9D9" stroke-width="1"/>
+<text x="80" y="75.00" text-anchor="end" font-family="Arial,sans-serif" font-size="13">26.7</text>
+<text x="226.67" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">Fold 1</text>
+<rect x="172.67" y="106.92" width="49.00" height="177.54" fill="url(#diagonal)" stroke="#111111"/>
+<text x="197.17" y="99.92" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700">+22.07</text>
+<rect x="226.67" y="284.46" width="49.00" height="29.20" fill="url(#dots)" stroke="#111111"/>
+<text x="251.17" y="330.66" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700">-3.63</text>
+<text x="500.00" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">Fold 2</text>
+<rect x="446.00" y="152.61" width="49.00" height="131.85" fill="url(#diagonal)" stroke="#111111"/>
+<text x="470.50" y="145.61" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700">+16.39</text>
+<rect x="500.00" y="284.46" width="49.00" height="68.62" fill="url(#dots)" stroke="#111111"/>
+<text x="524.50" y="370.08" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700">-8.53</text>
+<text x="773.33" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">Fold 3</text>
+<rect x="719.33" y="187.37" width="49.00" height="97.09" fill="url(#diagonal)" stroke="#111111"/>
+<text x="743.83" y="180.37" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700">+12.07</text>
+<rect x="773.33" y="283.01" width="49.00" height="1.45" fill="url(#dots)" stroke="#111111"/>
+<text x="797.83" y="276.01" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700">+0.18</text>
+<rect x="90" y="445" width="22" height="15" fill="url(#diagonal)" stroke="#111111"/>
+<text x="120" y="458" font-family="Arial,sans-serif" font-size="13">Train active %</text>
+<rect x="280" y="445" width="22" height="15" fill="url(#dots)" stroke="#111111"/>
+<text x="310" y="458" font-family="Arial,sans-serif" font-size="13">Test active %</text>
+</svg>

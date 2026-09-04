@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: uv sync --frozen --dev
+      - name: Lint
+        run: uv run ruff check .
+      - name: Tests
+        run: uv run pytest -q
+      - name: Offline engine checks
+        run: |
+          uv run ashare-backtest --self-test
+          uv run ashare-diagnostics --self-test
+          uv run ashare-walkforward --self-test
+          uv run ashare-portfolio-check --self-test
+      - name: Rebuild evidence audit
+        run: uv run ashare-audit --output /tmp/audit.json --markdown /tmp/audit.md --assets-dir /tmp/audit-assets

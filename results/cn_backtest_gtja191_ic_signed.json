@@ -1,0 +1,114 @@
+{
+  "generated_at_utc": "2026-07-16T03:38:17+00:00",
+  "framework": "a_share_rolling_point_in_time",
+  "window": {
+    "start": "2012-07-01",
+    "end": "2017-04-30"
+  },
+  "universe": {
+    "source": "csi500_synth",
+    "benchmark": "000905",
+    "constituents": 300,
+    "usable": 300,
+    "price_fetch_failed": 0
+  },
+  "config": {
+    "top_n": 200,
+    "strategy": "gtja191",
+    "factor_weights": {
+      "alpha011": -0.06666666666666667,
+      "alpha029": -0.06666666666666667,
+      "alpha150": -0.06666666666666667,
+      "alpha114": 0.06666666666666667,
+      "alpha167": -0.06666666666666667,
+      "alpha070": -0.06666666666666667,
+      "alpha034": 0.06666666666666667,
+      "alpha065": 0.06666666666666667,
+      "alpha001": 0.06666666666666667,
+      "alpha170": -0.06666666666666667,
+      "alpha168": 0.06666666666666667,
+      "alpha014": -0.06666666666666667,
+      "alpha161": -0.06666666666666667,
+      "alpha175": -0.06666666666666667,
+      "alpha178": -0.06666666666666667
+    },
+    "construction": "optimize",
+    "neutralize": [
+      "industry",
+      "size"
+    ],
+    "weight_cap": 0.03,
+    "ridge": 1.0,
+    "turnover_cap": 0.15,
+    "rebalance_freq": "2d",
+    "required": []
+  },
+  "frictionless": {
+    "frictions": {
+      "commission_bps_per_side": 0.0,
+      "slippage_bps_per_side": 0.0,
+      "stamp_tax": false,
+      "limit_up_suspension_filter": false
+    },
+    "rebalances": 0,
+    "buys_skipped_untradable": 0,
+    "total_cost_drag_fraction": 0.0,
+    "portfolio": {
+      "start": "2012-07-02",
+      "end": "2017-04-28",
+      "trading_days": 1174,
+      "total_return_percent": 0.0,
+      "annualized_return_percent": 0.0,
+      "annualized_volatility_percent": 0.0,
+      "sharpe_ratio_rf0": 0.0,
+      "max_drawdown_percent": 0.0
+    },
+    "benchmark": {
+      "start": "2012-07-02",
+      "end": "2017-04-28",
+      "trading_days": 1174,
+      "total_return_percent": 77.0,
+      "annualized_return_percent": 12.57,
+      "annualized_volatility_percent": 29.39,
+      "sharpe_ratio_rf0": 0.57,
+      "max_drawdown_percent": 54.35
+    },
+    "active_annualized_return_percent": -12.57,
+    "latest_selection": null
+  },
+  "realistic": {
+    "frictions": {
+      "commission_bps_per_side": 3.0,
+      "slippage_bps_per_side": 10.0,
+      "stamp_tax": true,
+      "limit_up_suspension_filter": true
+    },
+    "rebalances": 0,
+    "buys_skipped_untradable": 0,
+    "total_cost_drag_fraction": 0.0,
+    "portfolio": {
+      "start": "2012-07-02",
+      "end": "2017-04-28",
+      "trading_days": 1174,
+      "total_return_percent": 0.0,
+      "annualized_return_percent": 0.0,
+      "annualized_volatility_percent": 0.0,
+      "sharpe_ratio_rf0": 0.0,
+      "max_drawdown_percent": 0.0
+    },
+    "benchmark": {
+      "start": "2012-07-02",
+      "end": "2017-04-28",
+      "trading_days": 1174,
+      "total_return_percent": 77.0,
+      "annualized_return_percent": 12.57,
+      "annualized_volatility_percent": 29.39,
+      "sharpe_ratio_rf0": 0.57,
+      "max_drawdown_percent": 54.35
+    },
+    "active_annualized_return_percent": -12.57,
+    "latest_selection": null
+  },
+  "annualized_return_decay_percent": 0.0,
+  "note": "PIT: fundamentals gated by statutory disclosure deadline, prices truncated at each rebalance. Realistic run adds commission+slippage, sell-side stamp tax (10bp→5bp from 2023-08-28), and skips limit-up/suspended names at rebalance. Benchmark dates serve as the trading calendar. When benchmark=880008: real real-time-edited index incl. delisted names → no benchmark-side survivorship bias; strategy universe is the current 全A list (不含退市股) → asymmetry / survivorship tailwind."
+}

@@ -1,0 +1,161 @@
+{
+  "generated_at_utc": "2026-07-07T03:37:39+00:00",
+  "framework": "a_share_rolling_point_in_time",
+  "window": {
+    "start": "2021-01-01",
+    "end": "2026-07-07"
+  },
+  "universe": {
+    "index": "000300",
+    "constituents": 300,
+    "usable": 300,
+    "price_fetch_failed": 0
+  },
+  "config": {
+    "top_n": 30,
+    "factor_weights": {
+      "growth": 0.2,
+      "quality": 0.2,
+      "value": 0.15,
+      "momentum": 0.2,
+      "low_volatility": 0.15,
+      "liquidity": 0.1
+    }
+  },
+  "frictionless": {
+    "frictions": {
+      "commission_bps_per_side": 0.0,
+      "slippage_bps_per_side": 0.0,
+      "stamp_tax": false,
+      "limit_up_suspension_filter": false
+    },
+    "rebalances": 23,
+    "buys_skipped_untradable": 0,
+    "total_cost_drag_fraction": 0.0,
+    "portfolio": {
+      "start": "2021-01-04",
+      "end": "2026-07-06",
+      "trading_days": 1332,
+      "total_return_percent": 96.67,
+      "annualized_return_percent": 13.08,
+      "annualized_volatility_percent": 20.31,
+      "sharpe_ratio_rf0": 0.73,
+      "max_drawdown_percent": 27.9
+    },
+    "benchmark": {
+      "start": "2021-01-04",
+      "end": "2026-07-06",
+      "trading_days": 1332,
+      "total_return_percent": -8.08,
+      "annualized_return_percent": -1.52,
+      "annualized_volatility_percent": 18.08,
+      "sharpe_ratio_rf0": 0.0,
+      "max_drawdown_percent": 45.6
+    },
+    "active_annualized_return_percent": 14.6,
+    "latest_selection": {
+      "date": "2026-07-01",
+      "selected": [
+        "301308",
+        "300308",
+        "600221",
+        "002466",
+        "300502",
+        "002709",
+        "000657",
+        "688072",
+        "603986",
+        "000807",
+        "000001",
+        "002384",
+        "300394",
+        "002460",
+        "688111",
+        "600183",
+        "600887",
+        "000651",
+        "605117",
+        "600015",
+        "601899",
+        "601166",
+        "600519",
+        "603993",
+        "600016",
+        "600036",
+        "002027",
+        "000792",
+        "601138",
+        "002532"
+      ]
+    }
+  },
+  "realistic": {
+    "frictions": {
+      "commission_bps_per_side": 2.5,
+      "slippage_bps_per_side": 10.0,
+      "stamp_tax": true,
+      "limit_up_suspension_filter": true
+    },
+    "rebalances": 23,
+    "buys_skipped_untradable": 7,
+    "total_cost_drag_fraction": 0.0324,
+    "portfolio": {
+      "start": "2021-01-04",
+      "end": "2026-07-06",
+      "trading_days": 1332,
+      "total_return_percent": 87.41,
+      "annualized_return_percent": 12.1,
+      "annualized_volatility_percent": 19.82,
+      "sharpe_ratio_rf0": 0.7,
+      "max_drawdown_percent": 27.79
+    },
+    "benchmark": {
+      "start": "2021-01-04",
+      "end": "2026-07-06",
+      "trading_days": 1332,
+      "total_return_percent": -8.08,
+      "annualized_return_percent": -1.52,
+      "annualized_volatility_percent": 18.08,
+      "sharpe_ratio_rf0": 0.0,
+      "max_drawdown_percent": 45.6
+    },
+    "active_annualized_return_percent": 13.62,
+    "latest_selection": {
+      "date": "2026-07-01",
+      "selected": [
+        "301308",
+        "300308",
+        "600221",
+        "002466",
+        "300502",
+        "002709",
+        "000657",
+        "688072",
+        "603986",
+        "000807",
+        "000001",
+        "002384",
+        "300394",
+        "002460",
+        "688111",
+        "600183",
+        "600887",
+        "000651",
+        "605117",
+        "600015",
+        "601899",
+        "601166",
+        "600519",
+        "603993",
+        "600016",
+        "600036",
+        "002027",
+        "000792",
+        "601138",
+        "002532"
+      ]
+    }
+  },
+  "annualized_return_decay_percent": 0.98,
+  "note": "PIT: fundamentals gated by statutory disclosure deadline, prices truncated at each rebalance. Realistic run adds commission+slippage, sell-side stamp tax (10bp→5bp from 2023-08-28), and skips limit-up/suspended names at rebalance. Residual bias: current index membership (不含历史成分变动/退市)."
+}

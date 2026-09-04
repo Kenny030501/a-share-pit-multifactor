@@ -1,0 +1,56 @@
+{
+  "config": {
+    "strategy": "gtja191_top10_ic_signed",
+    "factors": [
+      "alpha011",
+      "alpha029",
+      "alpha150",
+      "alpha114",
+      "alpha167",
+      "alpha070",
+      "alpha034",
+      "alpha065",
+      "alpha001",
+      "alpha170"
+    ],
+    "weights": {
+      "alpha011": -0.1,
+      "alpha029": -0.1,
+      "alpha150": -0.1,
+      "alpha114": 0.1,
+      "alpha167": -0.1,
+      "alpha070": -0.1,
+      "alpha034": 0.1,
+      "alpha065": 0.1,
+      "alpha001": 0.1,
+      "alpha170": -0.1
+    },
+    "rebalance_freq": "10d",
+    "construction": "equal",
+    "window": "2012-07~2017-04"
+  },
+  "frictionless": {
+    "portfolio": {
+      "start": "2012-07-02",
+      "end": "2017-04-28",
+      "trading_days": 1174,
+      "total_return_percent": 191.4,
+      "annualized_return_percent": 24.84,
+      "annualized_volatility_percent": 30.55,
+      "sharpe_ratio_rf0": 0.91,
+      "max_drawdown_percent": 49.74
+    },
+    "benchmark": {
+      "start": "2012-07-02",
+      "end": "2017-04-28",
+      "trading_days": 1174,
+      "total_return_percent": 77.0,
+      "annualized_return_percent": 12.57,
+      "annualized_volatility_percent": 29.39,
+      "sharpe_ratio_rf0": 0.57,
+      "max_drawdown_percent": 54.35
+    },
+    "active_annualized_return_percent": 12.27,
+    "rebalances": 105
+  }
+}

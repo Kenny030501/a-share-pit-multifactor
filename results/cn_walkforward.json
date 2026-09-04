@@ -1,0 +1,260 @@
+{
+  "generated_at_utc": "2026-07-09T08:58:52+00:00",
+  "framework": "a_share_walk_forward_validation",
+  "window": {
+    "start": "2021-01-01",
+    "end": "2026-07-08"
+  },
+  "config": {
+    "scheme": "anchored_expanding",
+    "min_train_years": 3,
+    "test_years": 1,
+    "objective": "sharpe",
+    "top_n": 100,
+    "strategies": [
+      "balanced",
+      "quality_value_lowvol",
+      "momentum_quality",
+      "growth_acceleration",
+      "diagnostic_tilted",
+      "reversal_lottery"
+    ],
+    "frictions": {
+      "commission_bps": 2.5,
+      "slippage_bps": 10.0,
+      "max_stale_days": 7
+    },
+    "universe": {
+      "source": "full_market",
+      "usable": 5527
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train": {
+        "start": "2021-01-01",
+        "end": "2024-01-01"
+      },
+      "test": {
+        "start": "2024-01-02",
+        "end": "2025-01-01"
+      },
+      "train_ranking": [
+        {
+          "strategy": "diagnostic_tilted",
+          "train_sharpe": 1.27,
+          "train_cagr": 29.17,
+          "train_active": 22.07
+        },
+        {
+          "strategy": "reversal_lottery",
+          "train_sharpe": 0.34,
+          "train_cagr": 4.7,
+          "train_active": -2.4
+        },
+        {
+          "strategy": "momentum_quality",
+          "train_sharpe": -0.22,
+          "train_cagr": -8.22,
+          "train_active": -15.32
+        },
+        {
+          "strategy": "growth_acceleration",
+          "train_sharpe": -0.22,
+          "train_cagr": -7.2,
+          "train_active": -14.3
+        },
+        {
+          "strategy": "balanced",
+          "train_sharpe": -0.31,
+          "train_cagr": -9.43,
+          "train_active": -16.53
+        },
+        {
+          "strategy": "quality_value_lowvol",
+          "train_sharpe": -0.33,
+          "train_cagr": -6.81,
+          "train_active": -13.91
+        }
+      ],
+      "selected_strategy": "diagnostic_tilted",
+      "test_result": {
+        "annualized_return_percent": 1.45,
+        "sharpe_ratio_rf0": 0.19,
+        "max_drawdown_percent": 25.97,
+        "active_annualized_return_percent": -3.63
+      }
+    },
+    {
+      "fold": 2,
+      "train": {
+        "start": "2021-01-01",
+        "end": "2025-01-01"
+      },
+      "test": {
+        "start": "2025-01-02",
+        "end": "2026-01-01"
+      },
+      "train_ranking": [
+        {
+          "strategy": "diagnostic_tilted",
+          "train_sharpe": 1.01,
+          "train_cagr": 23.05,
+          "train_active": 16.39
+        },
+        {
+          "strategy": "reversal_lottery",
+          "train_sharpe": 0.59,
+          "train_cagr": 10.75,
+          "train_active": 4.09
+        },
+        {
+          "strategy": "momentum_quality",
+          "train_sharpe": -0.06,
+          "train_cagr": -4.7,
+          "train_active": -11.36
+        },
+        {
+          "strategy": "growth_acceleration",
+          "train_sharpe": -0.07,
+          "train_cagr": -4.47,
+          "train_active": -11.13
+        },
+        {
+          "strategy": "balanced",
+          "train_sharpe": -0.13,
+          "train_cagr": -5.8,
+          "train_active": -12.46
+        },
+        {
+          "strategy": "quality_value_lowvol",
+          "train_sharpe": -0.13,
+          "train_cagr": -3.62,
+          "train_active": -10.28
+        }
+      ],
+      "selected_strategy": "diagnostic_tilted",
+      "test_result": {
+        "annualized_return_percent": 34.11,
+        "sharpe_ratio_rf0": 2.05,
+        "max_drawdown_percent": 9.25,
+        "active_annualized_return_percent": -8.53
+      }
+    },
+    {
+      "fold": 3,
+      "train": {
+        "start": "2021-01-01",
+        "end": "2026-01-01"
+      },
+      "test": {
+        "start": "2026-01-02",
+        "end": "2026-07-08"
+      },
+      "train_ranking": [
+        {
+          "strategy": "diagnostic_tilted",
+          "train_sharpe": 1.12,
+          "train_cagr": 24.68,
+          "train_active": 12.07
+        },
+        {
+          "strategy": "reversal_lottery",
+          "train_sharpe": 0.69,
+          "train_cagr": 13.45,
+          "train_active": 0.84
+        },
+        {
+          "strategy": "quality_value_lowvol",
+          "train_sharpe": 0.09,
+          "train_cagr": 0.12,
+          "train_active": -12.49
+        },
+        {
+          "strategy": "growth_acceleration",
+          "train_sharpe": 0.07,
+          "train_cagr": -1.29,
+          "train_active": -13.9
+        },
+        {
+          "strategy": "momentum_quality",
+          "train_sharpe": 0.06,
+          "train_cagr": -2.0,
+          "train_active": -14.61
+        },
+        {
+          "strategy": "balanced",
+          "train_sharpe": 0.01,
+          "train_cagr": -2.69,
+          "train_active": -15.3
+        }
+      ],
+      "selected_strategy": "diagnostic_tilted",
+      "test_result": {
+        "annualized_return_percent": -10.06,
+        "sharpe_ratio_rf0": -0.55,
+        "max_drawdown_percent": 17.83,
+        "active_annualized_return_percent": 0.18
+      }
+    }
+  ],
+  "oos_summary": {
+    "combined_test_window": {
+      "start": "2024-01-02",
+      "end": "2026-07-08"
+    },
+    "n_folds": 3,
+    "adaptive_selection": {
+      "annualized_return_percent": 10.57,
+      "sharpe_ratio_rf0": 0.6,
+      "max_drawdown_percent": 25.97,
+      "active_annualized_return_percent": -4.21
+    },
+    "benchmark_880008": {
+      "annualized_return_percent": 14.78,
+      "sharpe_ratio_rf0": 0.65,
+      "max_drawdown_percent": 29.65
+    },
+    "reference_fixed_strategies": {
+      "balanced": {
+        "annualized_return_percent": 10.21,
+        "sharpe_ratio_rf0": 0.52,
+        "max_drawdown_percent": 21.81,
+        "active_annualized_return_percent": -4.57
+      },
+      "quality_value_lowvol": {
+        "annualized_return_percent": 9.34,
+        "sharpe_ratio_rf0": 0.64,
+        "max_drawdown_percent": 18.32,
+        "active_annualized_return_percent": -5.44
+      },
+      "momentum_quality": {
+        "annualized_return_percent": 11.35,
+        "sharpe_ratio_rf0": 0.53,
+        "max_drawdown_percent": 23.95,
+        "active_annualized_return_percent": -3.43
+      },
+      "growth_acceleration": {
+        "annualized_return_percent": 9.94,
+        "sharpe_ratio_rf0": 0.5,
+        "max_drawdown_percent": 23.59,
+        "active_annualized_return_percent": -4.84
+      },
+      "diagnostic_tilted": {
+        "annualized_return_percent": 9.96,
+        "sharpe_ratio_rf0": 0.57,
+        "max_drawdown_percent": 25.97,
+        "active_annualized_return_percent": -4.82
+      },
+      "reversal_lottery": {
+        "annualized_return_percent": 20.4,
+        "sharpe_ratio_rf0": 0.87,
+        "max_drawdown_percent": 28.06,
+        "active_annualized_return_percent": 5.62
+      }
+    },
+    "selection_beat_benchmark_folds": "1/3"
+  },
+  "verdict": "自适应选择 OOS 超额 -4.21%/年; 固定 diagnostic_tilted OOS 超额 -4.82%/年; 各折选中: diagnostic_tilted, diagnostic_tilted, diagnostic_tilted; 稳定选中同一策略"
+}

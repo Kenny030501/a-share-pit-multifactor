@@ -1,0 +1,236 @@
+{
+  "generated_at_utc": "2026-07-09T08:48:14+00:00",
+  "framework": "a_share_factor_diagnostics",
+  "window": {
+    "start": "2021-01-01",
+    "end": "2026-07-09"
+  },
+  "universe": {
+    "source": "full_market",
+    "benchmark_index": "000300",
+    "constituents": 5527,
+    "usable": 5527,
+    "price_fetch_failed": 0,
+    "rebalance_dates": 23,
+    "ic_periods": 22,
+    "quantiles": 5,
+    "min_cross_section": 30
+  },
+  "ic_summary": {
+    "reversal_5d": {
+      "mean_ic": 0.0536,
+      "std_ic": 0.0986,
+      "ir": 0.543,
+      "positive_ratio": 0.682,
+      "n_periods": 22,
+      "verdict": "strong"
+    },
+    "reversal_20d": {
+      "mean_ic": 0.0831,
+      "std_ic": 0.11,
+      "ir": 0.756,
+      "positive_ratio": 0.773,
+      "n_periods": 22,
+      "verdict": "strong"
+    },
+    "max_ret_20d": {
+      "mean_ic": 0.114,
+      "std_ic": 0.1047,
+      "ir": 1.089,
+      "positive_ratio": 0.909,
+      "n_periods": 22,
+      "verdict": "strong"
+    },
+    "illiquidity": {
+      "mean_ic": 0.0702,
+      "std_ic": 0.1486,
+      "ir": 0.473,
+      "positive_ratio": 0.727,
+      "n_periods": 22,
+      "verdict": "weak_positive"
+    },
+    "volume_trend": {
+      "mean_ic": 0.0603,
+      "std_ic": 0.0921,
+      "ir": 0.654,
+      "positive_ratio": 0.818,
+      "n_periods": 22,
+      "verdict": "strong"
+    }
+  },
+  "quantile_backtest": {
+    "reversal_5d": {
+      "n_periods": 22,
+      "group_annualized_return_percent": [
+        4.58,
+        10.44,
+        14.45,
+        17.4,
+        11.79
+      ],
+      "group_sharpe": [
+        0.31,
+        0.59,
+        0.81,
+        0.92,
+        0.61
+      ],
+      "group_max_drawdown_percent": [
+        36.9,
+        19.19,
+        17.19,
+        17.29,
+        32.75
+      ],
+      "long_short_spread_annualized_percent": 7.21,
+      "monotonic_trend": 0.7,
+      "monotonic": true
+    },
+    "reversal_20d": {
+      "n_periods": 22,
+      "group_annualized_return_percent": [
+        3.4,
+        10.37,
+        14.58,
+        16.88,
+        13.69
+      ],
+      "group_sharpe": [
+        0.26,
+        0.61,
+        0.79,
+        0.87,
+        0.67
+      ],
+      "group_max_drawdown_percent": [
+        40.59,
+        18.97,
+        17.28,
+        18.23,
+        24.93
+      ],
+      "long_short_spread_annualized_percent": 10.29,
+      "monotonic_trend": 0.7,
+      "monotonic": true
+    },
+    "max_ret_20d": {
+      "n_periods": 22,
+      "group_annualized_return_percent": [
+        3.61,
+        11.91,
+        15.11,
+        14.88,
+        13.24
+      ],
+      "group_sharpe": [
+        0.26,
+        0.6,
+        0.77,
+        0.83,
+        0.86
+      ],
+      "group_max_drawdown_percent": [
+        42.15,
+        24.13,
+        19.1,
+        18.02,
+        14.15
+      ],
+      "long_short_spread_annualized_percent": 9.63,
+      "monotonic_trend": 0.6,
+      "monotonic": true
+    },
+    "illiquidity": {
+      "n_periods": 22,
+      "group_annualized_return_percent": [
+        3.82,
+        8.77,
+        10.93,
+        13.58,
+        21.47
+      ],
+      "group_sharpe": [
+        0.29,
+        0.53,
+        0.63,
+        0.72,
+        0.89
+      ],
+      "group_max_drawdown_percent": [
+        32.24,
+        26.88,
+        24.19,
+        22.59,
+        26.62
+      ],
+      "long_short_spread_annualized_percent": 17.65,
+      "monotonic_trend": 1.0,
+      "monotonic": true
+    },
+    "volume_trend": {
+      "n_periods": 22,
+      "group_annualized_return_percent": [
+        5.15,
+        11.36,
+        15.28,
+        15.32,
+        12.67
+      ],
+      "group_sharpe": [
+        0.34,
+        0.64,
+        0.82,
+        0.81,
+        0.67
+      ],
+      "group_max_drawdown_percent": [
+        34.74,
+        20.24,
+        17.87,
+        19.2,
+        22.32
+      ],
+      "long_short_spread_annualized_percent": 7.52,
+      "monotonic_trend": 0.7,
+      "monotonic": true
+    }
+  },
+  "industry_neutral": {
+    "status": "computed",
+    "by_factor": {
+      "reversal_5d": {
+        "raw_mean_ic": 0.0536,
+        "industry_neutral_mean_ic": 0.0389,
+        "n_periods_neutral": 22
+      },
+      "reversal_20d": {
+        "raw_mean_ic": 0.0831,
+        "industry_neutral_mean_ic": 0.0698,
+        "n_periods_neutral": 22
+      },
+      "max_ret_20d": {
+        "raw_mean_ic": 0.114,
+        "industry_neutral_mean_ic": 0.0989,
+        "n_periods_neutral": 22
+      },
+      "illiquidity": {
+        "raw_mean_ic": 0.0702,
+        "industry_neutral_mean_ic": 0.0484,
+        "n_periods_neutral": 22
+      },
+      "volume_trend": {
+        "raw_mean_ic": 0.0603,
+        "industry_neutral_mean_ic": 0.0531,
+        "n_periods_neutral": 22
+      }
+    }
+  },
+  "caveats": [
+    "IC 用 T→下一再平衡日的前向收益,横截面 Spearman;季度频率,样本期数少,单期噪音大。",
+    "当前用最新指数成分名单,含成分股幸存者偏差(PIT 只解决财报滞后,不解决退市)。",
+    "百度 PE 历史约 2021 起,value 因子早期可能缺失。",
+    "流动性用 close×volume 代理(后复权价跨股票失真),权重最低。",
+    "long-short 仅作因子有效性诊断,未计交易成本/做空成本,不是可交易策略。",
+    "行业取自业绩报表 所处行业 字段,粗颗粒;缺失个股不参与行业中性。"
+  ]
+}

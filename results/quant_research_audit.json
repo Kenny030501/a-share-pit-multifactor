@@ -1,0 +1,362 @@
+{
+  "generated_at_utc": "2026-09-03T23:50:11+00:00",
+  "framework": "quant_research_evidence_audit",
+  "factor_significance": [
+    {
+      "source": "fundamental_2021_2026",
+      "factor": "growth",
+      "mean_ic": -0.0093,
+      "ir": -0.098,
+      "n_periods": 22,
+      "t_stat": -0.4621,
+      "p_value": 0.64877156,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": true,
+      "long_short_spread_annualized_percent": 0.17,
+      "q_value_bh": 0.64877156,
+      "significant_fdr_5pct": false
+    },
+    {
+      "source": "fundamental_2021_2026",
+      "factor": "quality",
+      "mean_ic": -0.0361,
+      "ir": -0.254,
+      "n_periods": 22,
+      "t_stat": -1.1924,
+      "p_value": 0.24639589,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": false,
+      "long_short_spread_annualized_percent": -9.43,
+      "q_value_bh": 0.30799486,
+      "significant_fdr_5pct": false
+    },
+    {
+      "source": "fundamental_2021_2026",
+      "factor": "momentum",
+      "mean_ic": -0.0366,
+      "ir": -0.292,
+      "n_periods": 22,
+      "t_stat": -1.369,
+      "p_value": 0.18547357,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": false,
+      "long_short_spread_annualized_percent": 1.53,
+      "q_value_bh": 0.30799486,
+      "significant_fdr_5pct": false
+    },
+    {
+      "source": "fundamental_2021_2026",
+      "factor": "low_volatility",
+      "mean_ic": 0.0846,
+      "ir": 0.461,
+      "n_periods": 22,
+      "t_stat": 2.1613,
+      "p_value": 0.04237455,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": false,
+      "long_short_spread_annualized_percent": 3.83,
+      "q_value_bh": 0.10593637,
+      "significant_fdr_5pct": false
+    },
+    {
+      "source": "fundamental_2021_2026",
+      "factor": "liquidity",
+      "mean_ic": -0.0944,
+      "ir": -0.709,
+      "n_periods": 22,
+      "t_stat": -3.3241,
+      "p_value": 0.00322285,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": false,
+      "long_short_spread_annualized_percent": -19.18,
+      "q_value_bh": 0.01611425,
+      "significant_fdr_5pct": true
+    },
+    {
+      "source": "gtja_t2_2012_2017",
+      "factor": "pv_divergence",
+      "mean_ic": 0.0353,
+      "ir": 0.41,
+      "n_periods": 725,
+      "t_stat": 11.0393,
+      "p_value": 0.0,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": true,
+      "long_short_spread_annualized_percent": 34.5,
+      "q_value_bh": 0.0,
+      "significant_fdr_5pct": true
+    },
+    {
+      "source": "gtja_t2_2012_2017",
+      "factor": "opening_gap",
+      "mean_ic": 0.0251,
+      "ir": 0.282,
+      "n_periods": 727,
+      "t_stat": 7.6127,
+      "p_value": 0.0,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": true,
+      "long_short_spread_annualized_percent": 78.39,
+      "q_value_bh": 0.0,
+      "significant_fdr_5pct": true
+    },
+    {
+      "source": "gtja_t2_2012_2017",
+      "factor": "abnormal_volume",
+      "mean_ic": 0.047,
+      "ir": 0.414,
+      "n_periods": 718,
+      "t_stat": 11.0959,
+      "p_value": 0.0,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": true,
+      "long_short_spread_annualized_percent": 28.91,
+      "q_value_bh": 0.0,
+      "significant_fdr_5pct": true
+    },
+    {
+      "source": "gtja_t2_2012_2017",
+      "factor": "amplitude_divergence",
+      "mean_ic": 0.0267,
+      "ir": 0.419,
+      "n_periods": 725,
+      "t_stat": 11.3038,
+      "p_value": 0.0,
+      "test_method": "independent_period_approximation_from_legacy_summary",
+      "monotonic": true,
+      "long_short_spread_annualized_percent": 16.81,
+      "q_value_bh": 0.0,
+      "significant_fdr_5pct": true
+    }
+  ],
+  "gtja191_multiple_testing_audit": {
+    "factors_with_minimum_history": 70,
+    "significant_fdr_5pct_independence_approximation": 22,
+    "top_corrected_candidates": [
+      {
+        "factor": "alpha011",
+        "mean_ic": -0.0696,
+        "ir": -0.645,
+        "n_periods": 49,
+        "t_stat": -4.5153,
+        "p_value": 4.108e-05,
+        "q_value_bh": 0.0028756,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha001",
+        "mean_ic": 0.0564,
+        "ir": 0.597,
+        "n_periods": 49,
+        "t_stat": 4.1734,
+        "p_value": 0.00012539,
+        "q_value_bh": 0.00438865,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha150",
+        "mean_ic": -0.0643,
+        "ir": -0.546,
+        "n_periods": 49,
+        "t_stat": -3.8209,
+        "p_value": 0.0003822,
+        "q_value_bh": 0.00586845,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha167",
+        "mean_ic": -0.0578,
+        "ir": -0.56,
+        "n_periods": 49,
+        "t_stat": -3.9243,
+        "p_value": 0.00027671,
+        "q_value_bh": 0.00586845,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha161",
+        "mean_ic": -0.0535,
+        "ir": -0.538,
+        "n_periods": 49,
+        "t_stat": -3.7638,
+        "p_value": 0.00045599,
+        "q_value_bh": 0.00586845,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha175",
+        "mean_ic": -0.0531,
+        "ir": -0.533,
+        "n_periods": 49,
+        "t_stat": -3.7319,
+        "p_value": 0.00050301,
+        "q_value_bh": 0.00586845,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha029",
+        "mean_ic": -0.0663,
+        "ir": -0.524,
+        "n_periods": 49,
+        "t_stat": -3.6659,
+        "p_value": 0.00061567,
+        "q_value_bh": 0.0061567,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha070",
+        "mean_ic": -0.0576,
+        "ir": -0.481,
+        "n_periods": 49,
+        "t_stat": -3.3684,
+        "p_value": 0.00149776,
+        "q_value_bh": 0.01071315,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha126",
+        "mean_ic": -0.0389,
+        "ir": -0.484,
+        "n_periods": 49,
+        "t_stat": -3.3868,
+        "p_value": 0.00141913,
+        "q_value_bh": 0.01071315,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha153",
+        "mean_ic": -0.0387,
+        "ir": -0.48,
+        "n_periods": 49,
+        "t_stat": -3.361,
+        "p_value": 0.00153045,
+        "q_value_bh": 0.01071315,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha189",
+        "mean_ic": -0.0486,
+        "ir": -0.464,
+        "n_periods": 49,
+        "t_stat": -3.2431,
+        "p_value": 0.00215431,
+        "q_value_bh": 0.01370925,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha114",
+        "mean_ic": 0.0631,
+        "ir": 0.455,
+        "n_periods": 49,
+        "t_stat": 3.1869,
+        "p_value": 0.00253006,
+        "q_value_bh": 0.01475868,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha178",
+        "mean_ic": -0.0531,
+        "ir": -0.435,
+        "n_periods": 49,
+        "t_stat": -3.0492,
+        "p_value": 0.00372725,
+        "q_value_bh": 0.02006981,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha168",
+        "mean_ic": 0.0548,
+        "ir": 0.42,
+        "n_periods": 49,
+        "t_stat": 2.9395,
+        "p_value": 0.00504319,
+        "q_value_bh": 0.02521595,
+        "significant_fdr_5pct": true
+      },
+      {
+        "factor": "alpha170",
+        "mean_ic": -0.055,
+        "ir": -0.411,
+        "n_periods": 49,
+        "t_stat": -2.8731,
+        "p_value": 0.0060366,
+        "q_value_bh": 0.02542264,
+        "significant_fdr_5pct": true
+      }
+    ],
+    "method_caveat": "Legacy summary approximation; rerun the screen for HAC and block-bootstrap inference."
+  },
+  "walk_forward": {
+    "folds": [
+      {
+        "fold": 1,
+        "selected_strategy": "diagnostic_tilted",
+        "train_active_annualized_percent": 22.07,
+        "test_active_annualized_percent": -3.63,
+        "generalization_gap_percent": -25.7,
+        "beat_benchmark": false
+      },
+      {
+        "fold": 2,
+        "selected_strategy": "diagnostic_tilted",
+        "train_active_annualized_percent": 16.39,
+        "test_active_annualized_percent": -8.53,
+        "generalization_gap_percent": -24.92,
+        "beat_benchmark": false
+      },
+      {
+        "fold": 3,
+        "selected_strategy": "diagnostic_tilted",
+        "train_active_annualized_percent": 12.07,
+        "test_active_annualized_percent": 0.18,
+        "generalization_gap_percent": -11.89,
+        "beat_benchmark": true
+      }
+    ],
+    "mean_generalization_gap_percent": -20.84,
+    "beat_benchmark_folds": "1/3",
+    "adaptive_oos": {
+      "annualized_return_percent": 10.57,
+      "sharpe_ratio_rf0": 0.6,
+      "max_drawdown_percent": 25.97,
+      "active_annualized_return_percent": -4.21
+    },
+    "best_fixed_reference": {
+      "strategy": "reversal_lottery",
+      "annualized_return_percent": 20.4,
+      "sharpe_ratio_rf0": 0.87,
+      "max_drawdown_percent": 28.06,
+      "active_annualized_return_percent": 5.62
+    },
+    "best_fixed_reference_caveat": "A fixed reference is descriptive unless it was frozen before the test window."
+  },
+  "execution": {
+    "turnover_controlled": {
+      "turnover_cap": 0.15,
+      "frictionless_active_annualized_percent": 17.11,
+      "realistic_active_annualized_percent": 1.22,
+      "annualized_return_decay_percent": 15.89,
+      "cumulative_explicit_cost_drag_fraction": 0.399
+    },
+    "turnover_uncontrolled": {
+      "turnover_cap": 2.0,
+      "frictionless_active_annualized_percent": 26.7,
+      "realistic_active_annualized_percent": -15.88,
+      "annualized_return_decay_percent": 42.58,
+      "cumulative_explicit_cost_drag_fraction": 1.223
+    },
+    "realistic_active_improvement_percent": 17.1
+  },
+  "capacity_status": {
+    "status": "engine_ready_not_backfilled",
+    "reason": "Saved public runs predate the AUM-aware market-impact module.",
+    "rerun_flag": "--portfolio-aum-millions"
+  },
+  "evidence_boundaries": [
+    "旧版 IC 汇总只能进行按期独立的 t 检验近似；重新运行会直接输出 Newey-West HAC、区块 bootstrap 区间和 BH-FDR。",
+    "策略股票池使用当前 A 股证券名单，因此仍有退市股票缺失造成的幸存者偏差。",
+    "财务数据使用法定披露截止日作为保守可用日，而不是逐份交易所公告的真实时间戳。",
+    "固定 reversal_lottery 参考只有在测试窗前冻结规格时，才能视为无偏样本外证据。",
+    "容量输出来自模型，投入生产前需要用订单级真实滑点进行校准。"
+  ]
+}
