@@ -6,7 +6,7 @@
 
 An end-to-end research framework for testing cross-sectional factors across the mainland China A-share universe without using financial information before it was legally available.
 
-The project covers data ingestion, point-in-time snapshots, robust factor inference, portfolio construction, turnover and capacity diagnostics, and expanding-window out-of-sample validation. It was built as an independent research project by Hongru Da.
+The project covers data ingestion, point-in-time snapshots, robust factor inference, portfolio construction, turnover and capacity diagnostics, and expanding-window out-of-sample validation.
 
 ## What this project demonstrates
 
